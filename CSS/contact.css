@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* font-size: 16px; */
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    letter-spacing: -2px;
+}
+.winter {
+    position: relative;
+    width: 100px; 
+    height: 100px;
+    left: 20%;
+    top: 0;
+    transition: .3s;
+}
+.winter .spans {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 80px;
+    height: 15px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    animation: to-down .5s linear infinite;
+    transition: .3s;
+}
+.winter span {
+    width: 2px;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.397);
+}
+@media(min-width: 375px) {
+    .winter.call {
+        display: hidden;
+    }
+}
+@media(min-width: 992px) {
+    .winter.call {
+        display: block;
+    }
+}
+.social i {
+    cursor: pointer;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+@keyframes to-down {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 10px;
+    }
+}

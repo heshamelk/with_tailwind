@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.title {
+    letter-spacing: -2px;
+}
+.services .box {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.801),
+     0 0 20px 10px rgba(0, 255, 255, 0.63),
+      0 0 40px 20px rgba(0, 255, 255, 0.288);
+}
+
